@@ -1,107 +1,68 @@
-name: Bug Report
-description: Create a report to help us improve
+name: Playback Issue
+description: Report a problem with the playback of video or audio
 labels: [Bug, Needs Triage]
 body:
   - type: input
     id: version
     attributes:
-      label: What version of Hls.js are you using?
+      label: What version of Video.js are you using?
+      description: Please include all relevant versions. If not using the latest version, explain why not in the description below.
       placeholder: e.g. vX.Y.Z
     validations:
       required: true
   - type: input
+    id: plugins
+    attributes:
+      label: Video.js plugins used
+  - type: input
     id: browser
     attributes:
       label: What browser (including version) are you using?
-      placeholder: e.g. Chrome 91.0.4472.106 (Official Build) (x86_64)
+      placeholder: e.g. Chrome 99.0.4844.51 (Official Build) (x86_64)
     validations:
       required: true
   - type: input
     id: os
     attributes:
-      label: What OS (including version) are you using?
+      label: What OS and version are you using?
       placeholder: e.g. Windows 10
     validations:
       required: true
   - type: input
-    id: stream
+    id: testcase
     attributes:
-      label: Test stream
-      description: If possible, please provide a test stream or page. You can paste your stream into the demo and provide the permalink here.
+      label: URL of stream, or link to test case
+      description: Please provide a test stream or page.
     validations:
       required: false
   - type: textarea
-    id: configuration
+    id: description
     attributes:
-      label: Configuration
-      description: Please provide the player configuration.
-      placeholder: |
-        {
-          "debug": false,
-          "backBufferLength": 60
-        }
-      value: '{}'
-      render: JavaScript
+      label: Description
+      description: Please give an overview of the issue.
     validations:
       required: true
   - type: textarea
-    id: additional_player_steps
-    attributes:
-      label: Additional player setup steps
-      description: Please provide any additional player setup steps if there are any.
-    validations:
-      required: false
-  - type: checkboxes
-    id: checklist
-    attributes:
-      label: Checklist
-      options:
-        - label: The issue observed is not already reported by searching on Github under https://github.com/video-dev/hls.js/issues
-          required: true
-        - label: The issue occurs in the stable client (latest release) on https://hls-js.netlify.com/demo and not just on my page
-          required: true
-        - label: The issue occurs in the latest client (main branch) on https://hls-js-dev.netlify.com/demo and not just on my page
-          required: true
-        - label: The stream has correct Access-Control-Allow-Origin headers (CORS)
-          required: true
-        - label: There are no network errors such as 404s in the browser console when trying to play the stream
-          required: true
-  - type: textarea
-    id: steps_to_reproduce
+    id: str
     attributes:
       label: Steps to reproduce
-      description: Please provide clear steps to reproduce your problem.  If the bug is intermittent, give a rough frequency.
-      value: |
-        1. 
-        2.
+      description: Please provide detailed steps to reproduce the issue.
     validations:
       required: true
+      value: |
+        1.
+        2.
+        3.
   - type: textarea
-    id: expected_behaviour
+    id: expected
     attributes:
       label: Expected behaviour
     validations:
       required: true
   - type: textarea
-    id: actual_behaviour
+    id: actual
     attributes:
-      label: What actually happened?
+      label: Actual behaviour
     validations:
       required: true
-  - type: textarea
-    id: console_output
-    attributes:
-      label: Console output
-      description: Paste the contents of the browser console here (with `debug` enabled in your config).
-      render: shell
-    validations:
-      required: true
-  - type: textarea
-    id: media_internals_output
-    attributes:
-      label: Chrome media internals output
-      description: For media errors reported on Chrome browser, please also paste the output of "chrome://media-internals"
-      render: shell
-    validations:
-      required: false
 
