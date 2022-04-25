@@ -1,38 +1,68 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+name: General issue
+description: Report a problem with the playback of video or audio
+labels: [Bug, Needs Triage]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please give an overview of the issue.
+    validations:
+      required: true
+  - type: input
+    id: testcase
+    attributes:
+      label: Reduced test case
+      description: Please add a URL to a [reduced test case](https://stackoverflow.com/help/minimal-reproducible-example) where the issue can be observed. We have a [starter template](https://codepen.io/gkatsev/pen/GwZegv?editors=1000#0) on Codepen.
+      placeholder: https://
+  - type: textarea
+    id: str
+    attributes:
+      label: Steps to reproduce
+      description: Detailed steps to reproduce the issue.
+      value: |
+        1.
+        2.
+        3.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: Describe what you expected to see
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Describe what happened
+  - type: textarea
+    id: errors
+    attributes:
+      label: Errors
+      description: If there is an error displayed in the player or in the console, please include them here.
+  - type: input
+    id: version
+    attributes:
+      label: What version of Video.js are you using?
+      description: Please include all relevant versions. If not using the latest version, explain why not in the description above.
+      placeholder: e.g. vX.Y.Z
+    validations:
+      required: true
+  - type: input
+    id: plugins
+    attributes:
+      label: Video.js plugins used.
+      description: Does the issue occur without the plugin(s)?
+  - type: input
+    id: browser
+    attributes:
+      label: What browser (including version) are you using?
+      placeholder: e.g. Chrome 99.0.4844.51 (Official Build) (x86_64)
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: What OS and version are you using?
+      placeholder: e.g. Windows 10
+    validations:
+      required: true
