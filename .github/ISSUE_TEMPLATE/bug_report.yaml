@@ -1,6 +1,6 @@
 name: General issue
 description: Report a general issue with Video.js
-labels: needs: triage
+labels: "needs: triage, bug"
 body:
   - type: markdown
     attributes:
