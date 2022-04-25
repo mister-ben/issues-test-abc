@@ -63,13 +63,13 @@ body:
     id: browser
     attributes:
       label: What browser(s) including version(s) does this occur with?
-      placeholder: e.g. Chrome 99.0.4844.51 (Official Build) (x86_64)
+      placeholder: e.g. Chrome 100
     validations:
       required: true
   - type: input
     id: os
     attributes:
       label: What OS(es) and version(s) does this occur with?
-      placeholder: e.g. Windows 10
+      placeholder: e.g. Windows 11
     validations:
       required: true
