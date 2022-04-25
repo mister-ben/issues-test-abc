@@ -22,7 +22,7 @@ body:
     id: testcase
     attributes:
       label: Reduced test case
-      description: Please add a URL to a [reduced test case](https://stackoverflow.com/help/minimal-reproducible-example) where the issue can be observed. We have a [starter template](https://codepen.io/gkatsev/pen/GwZegv?editors=1000#0) on Codepen.
+      description: Please add a URL to a [reduced test case](https://stackoverflow.com/help/minimal-reproducible-example) where the issue can be observed. We have a [starter template](https://codepen.io/gkatsev/pen/GwZegv?editors=1000#0) on Codepen. Providing a test case will improve the chances of someone being able to identify the issue quickly.
       placeholder: https://
   - type: textarea
     id: str
@@ -33,6 +33,8 @@ body:
         1.
         2.
         3.
+    validations:
+      required: true
   - type: textarea
     id: expected
     attributes:
