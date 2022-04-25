@@ -1,8 +1,8 @@
 name: General issue
 description: Report a problem with the playback of video or audio
-labels: [Bug, Needs Triage]
+labels: []
 body:
-  - type: textarea
+  - type: markdown
     id: description
     attributes:
       label: Description
