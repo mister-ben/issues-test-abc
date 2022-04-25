@@ -4,7 +4,6 @@ body:
   - type: markdown
     id: description
     attributes:
-      label: Description
       value: Please give an overview of the issue.
     validations:
       required: true
