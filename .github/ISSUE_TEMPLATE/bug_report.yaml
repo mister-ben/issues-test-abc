@@ -17,7 +17,9 @@ body:
     id: description
     attributes:
       label: Description
-      description: Please give a detailed description of the issue.
+      description: |
+        Please give a detailed description of the issue.
+        What did you expect to happen, and what happened?
     validations:
       required: true
   - type: input
@@ -27,6 +29,7 @@ body:
       description: |
         Please add a URL to a [reduced test case](https://stackoverflow.com/help/minimal-reproducible-example) where the issue can be observed. We have a [starter template](https://codepen.io/gkatsev/pen/GwZegv?editors=1000#0) on Codepen.
         Providing a test case will improve the chances of someone being able to identify the issue quickly.
+        For a playback problem, including the stream URL is essential.
       placeholder: https://
   - type: textarea
     id: str
@@ -39,16 +42,6 @@ body:
         3.
     validations:
       required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected result
-      description: Describe what you expected to see.
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual result
-      description: Describe what happened.
   - type: textarea
     id: errors
     attributes:
