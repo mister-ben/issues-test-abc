@@ -1,12 +1,11 @@
 name: General issue
 description: Report a problem with the playback of video or audio
-labels: []
 body:
   - type: markdown
     id: description
     attributes:
       label: Description
-      description: Please give an overview of the issue.
+      value: Please give an overview of the issue.
     validations:
       required: true
   - type: input
