@@ -4,9 +4,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for contributing by opening an issue. Before you start, please check this list:
-        * If you are not reporting a bug, but want to ask a general question instead, use [discussions](https://github.com/videojs/video.js/discussions) instead.
-        * Check the [FAQ](https://videojs.com/guides/faqs) and [troubleshooting guides](https://videojs.com/guides/troubleshooting)
+        Thank you for using Video.js and contributing by opening an issue. Before you start, please check this list:
+        * If you are not reporting a bug, but want to ask a general question, use [discussions](https://github.com/videojs/video.js/discussions) instead.
+        * Check the [FAQ](https://videojs.com/guides/faqs) and [troubleshooting guides](https://videojs.com/guides/troubleshooting).
         * If there is an existing open issue for exactly the same problem, comment there instead. However, be careful not to comment on old, closed issues, they are unlikely to be noticed. Also take care to make sure it is really the exact same issue. If in doubt, open as a new issue.
         * If the issue is with a specific plugin, it's often better to open an issue on the plugin repository instead.
         * Please do take the time to give detailed information, and include a test case. A detailed issue with actionable information will get a better response than a vague anecdote.
@@ -36,12 +36,12 @@ body:
     id: expected
     attributes:
       label: Expected result
-      description: Describe what you expected to see
+      description: Describe what you expected to see.
   - type: textarea
     id: actual
     attributes:
       label: Actual result
-      description: Describe what happened
+      description: Describe what happened.
   - type: textarea
     id: errors
     attributes:
@@ -59,18 +59,17 @@ body:
     id: plugins
     attributes:
       label: Video.js plugins used.
-      description: Does the issue occur without the plugin(s)?
   - type: input
     id: browser
     attributes:
-      label: What browser (including version) are you using?
+      label: What browser(s) including version(s) does this occur with?
       placeholder: e.g. Chrome 99.0.4844.51 (Official Build) (x86_64)
     validations:
       required: true
   - type: input
     id: os
     attributes:
-      label: What OS and version are you using?
+      label: What OS(es) and version(s) does this occur with?
       placeholder: e.g. Windows 10
     validations:
       required: true
