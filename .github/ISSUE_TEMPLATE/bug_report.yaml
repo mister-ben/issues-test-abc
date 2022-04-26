@@ -43,6 +43,14 @@ body:
     validations:
       required: true
   - type: textarea
+    id: expected
+    attributes:
+      label: What was expected?
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+  - type: textarea
     id: errors
     attributes:
       label: Errors
